@@ -3,6 +3,7 @@ with open(file='data.txt') as file:
 
 
 def part_one():
+    global data
     max_num, min_num = data[-1], data[0]
     lowest_fuel_cost = {'new_pos': 0, 'curr_lowest': float('inf')}
     for new_pos in range(min_num, max_num + 1):
@@ -18,6 +19,7 @@ def part_one():
 
 
 def part_two():
+    global data
     max_num, min_num = data[-1], data[0]
     lowest_fuel_cost = {'new_pos': 0, 'curr_lowest': float('inf')}
     for new_pos in range(min_num, max_num + 1):
